@@ -7,6 +7,7 @@ public class Usuario {
     private List<Direccion> direccionEnvio;  //Esto es un objeto anidado
     private Direccion direccionFacturacion;
     private List<String> historialPedidos;
+    private List<Pedido> pedido;
     private String numeroTelefono;
     private boolean activo;
     private boolean deleted;
@@ -55,7 +56,6 @@ public class Resena {
 
 public class Pedido {
     private String idPedido;
-    private Usuario usuario;
     private List<ItemPedido> items;  //Esto es un objeto anidado
     private double montoTotal;
     private Date fechaPedido;
@@ -117,11 +117,24 @@ public class Promocion {
 
 public class Transportista{
     private String idTrasnportista;
-    private Producto producto;
+    private List<Envio> envio;
     private String nombre;
-    private String contacto; 
+    private String correo; 
+    private String telefono; 
+    private String direccion;
+    private String wbe;
+    private String contacto;
 }
-public class Probehedor{}
+public class Provehedor{
+    private String idProvehedor;
+    private String nombre;
+    private String contacto;
+    private String correo;
+    private String telefono;
+    private String web;
+    private List<Producto>productos;
+
+}
 
 
 ```
